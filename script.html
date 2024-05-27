@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>حجز موعد | AD FAZ</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+      </style>
+    </head>
+
+    <body>
+
+        <section class="booking-form">
+
+            <div class="container-one" id="container-one">
+
+                <div class="form-container sign-up">
+                    <form action="https://formspree.io/f/xdovbkke"
+                        method="POST">
+                        <h1>اهلا وسهلا بك في شركه اد فاز</h1>
+                        <span>الاوقات المتاحه لحجز المواعيد من الساعه 9:00 صباحا
+                            وحتى الساعه 5:00 مساء </span>
+
+                        <input type="text" placeholder="الاسم" name="الاسم">
+                        <input type="email" placeholder="الايميل"
+                            name="الايميل">
+                        <input type="time" placeholder="الوقت" name="الوقت">
+                        <input type="date" placeholder="التاريخ" name="التاريخ">
+                        <button>حجز</button>
+                    </form>
+                </div>
+
+                <div class="form-container sign-in">
+                    <form action="https://formspree.io/f/xdovbkke"
+                        method="POST">
+                        <h1>الرجاء ادخال البيانات التاليه</h1>
+                        <span>الاوقات المتاحه لحجز المواعيد من الساعه 9:00 صباحا
+                            وحتى الساعه 5:00 مساء </span>
+
+                        <input type="text" placeholder="الاسم" name="الاسم">
+                        <input type="email" placeholder="الايميل"
+                            name="الايميل">
+                        <input type="text" placeholder="رقم الطلب"
+                            name="رقم الطلب">
+                        <input type="time" placeholder="الوقت" name="الوقت">
+                        <input type="date" placeholder="التاريخ" name="التاريخ">
+
+                        <!-- <a href="#">Forget Your Password?</a> -->
+                        <button>حجز</button>
+                    </form>
+                </div>
+                <div class="toggle-container">
+
+                    <div class="toggle">
+                        <div class="toggle-panel toggle-left">
+                            <h1></h1>
+                            <p>في حال كان لديه رقم طلب</p>
+                            <button class="hidden" id="login">انقر هنا</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>اهلا بك في اد فاز</h1>
+                            <p>في حال كنت مستخدم جديد وليس لديه اي معلومات عن اد
+                                فاز</p>
+                            <button class="hidden" id="register">انقر
+                                هنا</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-two" id="container-two">
+
+                <div class="box-two">
+                    <img src="images/Artboard no name.png" alt>
+                </div>
+
+                <script
+                    src="https://secure.paytabs.sa/payment/js/paylib.js"></script>
+
+                <form
+                    action="https://secure.paytabs.sa/payment/link/108574/1336515"
+                    id="payform" method="post">
+
+                    <span id="paymentErrors"></span>
+                    <div class="row">
+                        <label></label>
+                        <input type="text" data-paylib="number" size="20"
+                            placeholder="الاسم">
+                        <input type="text" data-paylib="number" size="20"
+                            placeholder="رقم البطاقه">
+                    </div>
+                    <div class="rowTwo">
+                        <input type="text" data-paylib="expmonth" size="2"
+                            placeholder="MM">
+                        <input type="text" data-paylib="expyear" size="4"
+                            placeholder="YYYY">
+                    </div>
+                    <div class="rowThree">
+                        <input type="text" data-paylib="cvv" size="4"
+                            placeholder="cvv">
+                    </div>
+                    <input class="button" type="submit" value="اتمام الدفع">
+                </form>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
